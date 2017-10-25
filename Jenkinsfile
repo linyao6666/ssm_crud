@@ -7,6 +7,8 @@ pipeline {
           node{
             stage("hehe"){
               bat "mvn -version"
+              bat "mvn clean"
+              bat "mvn compile"
             }
           }
         }
