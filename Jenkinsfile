@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Building') {
       steps {
-        sh '''bat "mvn clean"
-bat "infer -- mvn compile"'''
+        sh '''sh "mvn clean"
+sh "infer -- mvn compile"'''
       }
     }
     stage('Testing') {
