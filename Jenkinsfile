@@ -9,7 +9,7 @@ pipeline {
               git "https://github.com/linyao6666/ssm_crud"
               bat "mvn -version"
               bat "mvn clean"
-              bat "mvn compile"
+              bat "mvn test"
             }
           }
         }
